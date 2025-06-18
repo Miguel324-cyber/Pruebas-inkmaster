@@ -3,7 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "cypress:run:registro": "cypress run --spec cypress/e2e/calidad/registro.cy.js",
+    "cypress:run:login": "cypress run --spec cypress/e2e/calidad/login.cy.js",
+    "cypress:run:calidad": "cypress run --spec cypress/e2e/calidad/*.cy.js"
   },
   "repository": {
     "type": "git",
